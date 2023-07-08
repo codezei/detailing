@@ -1,0 +1,39 @@
+.services {
+    @media screen and (min-width: 1200px) {
+        padding: 120px 0;
+    }
+    &__title {
+        color: var(--primary-light);
+        margin-bottom: 2rem;
+    }
+    &__col {
+            margin-bottom: 30px;
+        
+    }
+}
+
+
+.service {
+    // border: 1px solid #000;
+    background: rgb(23,23,38);
+    background: linear-gradient(45deg, rgba(23,23,38,0.7) 0%, rgba(42, 20, 83, 0.7) 100%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.2);
+
+    &__inner {
+        padding: 0.75rem;
+    }
+    &__img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    &__title {
+        font-size: 1.2rem;
+        color: var(--primary-light);
+        opacity: 0.7;
+    }
+
+}

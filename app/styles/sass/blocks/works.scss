@@ -1,0 +1,36 @@
+.works {
+    @media screen and (min-width: 1200px) {
+        padding: 100px 0;
+    }
+
+    &-slide {
+        border-radius: 5px;
+        overflow: hidden;
+        img {
+            transition: all 400ms;
+        }
+        &:hover img {
+            transform: scale(1.1);
+        }
+    }
+    &-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    &-arrows {
+        margin-bottom: 0.5rem;
+    }
+    &__footer {
+        margin-top: 2rem;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background: rgb(23,23,38);
+        background: linear-gradient(45deg, rgba(23,23,38,0.2) 0%, rgba(42, 20, 83, 0.7) 100%);
+        box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.2);
+        color: #fff;
+    }
+}
