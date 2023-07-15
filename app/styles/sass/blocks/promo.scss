@@ -2,7 +2,7 @@
     padding: 150px 0 100px;
     color: var(--primary-light-text);
     position: relative;
-    background-color: #000;
+    background-color: #1c1917;
     overflow: hidden;
     // text-align: center;
     // &__bg {
@@ -65,23 +65,54 @@
     &__list {
         list-style: none;
         padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+
         &-title {
             margin-bottom: 1rem;
             text-align: center;
         }
         &-item {
-            &:not(:last-child) {
-                margin-bottom: 1rem;
+            margin-bottom: 1rem;
+            width: calc(50% - 1rem);
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba($color: #1c1917, $alpha: 0.6);
+            border-radius: 1rem;
+            transition: all 400ms;
+            &:nth-child(odd) {
+                margin-right: 1rem;
+            }
+            &:hover {
+                transform: translateY(-10px);
             }
         }
+        &-icon {
+            margin-bottom: 1rem;
+        }
+        &-description {
+            margin-bottom: 0;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+        
     }
     &__btn {
         margin-bottom: 2rem;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
         text-align: center;
+    }
+    @media screen and (max-width: 575px) {
+        padding: 120px 0 40px;
         &__list {
-            text-align: left;
+            &-item {
+                width: 100%;
+                margin-right: 0 !important;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 
@@ -166,12 +197,13 @@
         height: 100%;
         max-width: unset;
         transform-origin: top center;
-        animation: car 1000ms ease-out forwards;
+        // animation: car 2000ms ease-out forwards;
         transform: scale(0.8);
+        animation-fill-mode: forwards !important;
 
     }
 }
-@keyframes car {
+@keyframes zoomIn {
     from {
         transform: scale(0.8);
     }

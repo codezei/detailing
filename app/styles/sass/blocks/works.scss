@@ -2,6 +2,14 @@
     @media screen and (min-width: 1200px) {
         padding: 100px 0;
     }
+    &__title {
+        display: inline-block;
+        border-bottom: 1px solid #333;
+    }
+    &__description {
+        max-width: 700px;
+        margin-bottom: 2rem;
+    }
 
     &-slide {
         border-radius: 5px;
@@ -24,13 +32,18 @@
         margin-bottom: 0.5rem;
     }
     &__footer {
+        
         margin-top: 2rem;
-        text-align: center;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        background: rgb(23,23,38);
-        background: linear-gradient(45deg, rgba(23,23,38,0.2) 0%, rgba(42, 20, 83, 0.7) 100%);
-        box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.2);
-        color: #fff;
+        // margin-top: 2rem;
+        // text-align: center;
+        // padding: 1rem;
+        // border-radius: 0.5rem;
+        // background: rgb(23,23,38);
+        // background: linear-gradient(45deg, rgba(23,23,38,0.2) 0%, rgba(42, 20, 83, 0.7) 100%);
+        // box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.2);
+        // color: #fff;
+
+        //         background: rgb(23,23,38);
+        // background: linear-gradient(45deg, #ffffff 0%, #1c1917 100%);
     }
 }

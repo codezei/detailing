@@ -11,6 +11,26 @@ document.addEventListener('DOMContentLoaded', () => {
 	smoothScroll()
 })
 
+let wow = new WOW(
+	{
+	boxClass:     'wow',      // default
+	animateClass: 'animated', // default
+	offset:       0,          // default
+	mobile:       true,       // default
+	live:         true        // default
+  }
+  )
+
+window.addEventListener("load", function() {
+	wow.init();
+	hideLoader ();
+  })
+function hideLoader () {
+	let loader = document.querySelector('.loader')
+	loader.style.display = 'none'
+}
+
+
 
 // мобильное меню
 function mobMenuToggle() {

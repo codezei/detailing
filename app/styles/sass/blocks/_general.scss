@@ -1,7 +1,7 @@
 // GENERAL PROJECT STYLES
 :root {
     scroll-behavior: unset !important;
-    --primary-dark:  rgb(23 23 38);
+    --primary-dark:  #1c1917;
     --primary-light: #cc9c52;
     --primary-light-text: #fff1dc;
 }
@@ -68,6 +68,18 @@ h6 {
             color: #fff;
         }
     }
+    &--dark {
+        border: 1px solid #1c1917;
+        background: #1c1917;
+        color: #fff;
+        // box-shadow: 5px 5px 10px rgba($color: #fff, $alpha: 0.2);
+
+        &:hover {
+            border: 1px solid #9d1029;
+            background: #9d1029;
+            color: #fff;
+        }
+    }
 
     &--inversion {
         border: 1px solid #383838;
@@ -100,13 +112,13 @@ h6 {
 }
 
 .block-bg {
-    // background-color: var(--primary-dark);
-    // color: var(--primary-light-text);
+    background-color: #1c1917;
+    color: var(--primary-light-text);
 
-    background: rgb(23,23,38);
-    background: linear-gradient(45deg, rgba(23,23,38,0.4) 0%, rgba(42, 20, 83, 0.7) 100%);
-    box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.2);
-    color: #fff;
+    // background: rgb(23,23,38);
+    // background: linear-gradient(45deg, rgba(23,23,38,0.4) 0%, rgba(42, 20, 83, 0.7) 100%);
+    // box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.2);
+    // color: #fff;
 }
 .gold-title {
     -webkit-text-fill-color: transparent;
@@ -115,7 +127,7 @@ h6 {
     background: linear-gradient(135deg,#cc9c52,#e8d0ac 55.97%,#cc9c52);
     -webkit-background-clip: text;
     background-clip: text;
-    animation: title 2000ms ease-out forwards;
+    // animation: title 2000ms ease-out forwards;
     display: inline-block;
     border-bottom: 1px solid #cc9c52;
 }

@@ -20,7 +20,9 @@
 </head>
 
 <body>
-
+<div class="loader">
+    <img src="./images/dist/logo.png" alt="" class="loader__img">
+</div>
 <header class="header">
 
     <div class="container">
@@ -33,7 +35,7 @@
                     <!-- wp_nav_menu() - primary-menu -->
                     <div class="menu-primary-menu-container">
                         <ul class="menu primary-menu" id="primary-menu">
-                            <li class="menu-item">
+                            <li class="menu-item active">
                                 <a href="#promo">Home</a>
                             </li>
                             <li class="menu-item">
@@ -96,7 +98,7 @@
                 <img src="./images/dist/garage.jpg" alt="" class="garage__img">
             </div>
             <div class="garage__item">
-                <img src="./images/dist/garage-car.png" alt="" class="garage__car">
+                <img src="./images/dist/garage-car.png" alt="" class="garage__car wow zoomIn" data-wow-duration="2000ms" data-wow-delay="200ms">
             </div>
 
         </div>
@@ -104,18 +106,34 @@
     </div>
     <div class="container promo__inner">
         <div class="promo__row row">
-            <div class="col-md-6">
+            <div class="col-lg-6 wow slideInLeft" data-wow-delay="1800ms">
                 <h1 class="promo__title gold-title">Give your car the perfect <span>AlexDetailing</span> look!</h1>
                 <h2 class="promo__subtitle">Detailing masters you can trust to shine your car!</h2>
                 <a href="tel:1111" class="btn btn--primary promo__btn">Call Now</a>
             </div>
-            <div class="col-md-6 col-xl-5">
-                <h3 class="promo__list-title">What do we offer:</h3>
+            <div class="col-lg-6">
+                <h3 class="promo__list-title wow slideInDown" data-wow-delay="2000ms">What do we offer:</h3>
                 <ul class="promo__list">
-                    <li class="promo__list-item bg-item">Car wash and polish</li>
-                    <li class="promo__list-item bg-item">Restoration of the interior</li>
-                    <li class="promo__list-item bg-item">Protective coatings: application of ceramics and protective membrane</li>   
-                    <li class="promo__list-item bg-item">Adhesion of decorative membranes: tinted glass, vinyl membrane for car body
+                    <li class="promo__list-item wow fadeInDown"  data-wow-delay="2200ms">
+                        <img src="./images/dist/icon-1.png" alt="" class="promo__list-icon">
+                        <h4 class="promo__list-description"> Car wash and polish</h4>
+                       
+                    </li>
+                    <li class="promo__list-item wow fadeInRight" data-wow-delay="2400ms">
+                        <img src="./images/dist/icon-2.png" alt="" class="promo__list-icon">
+                        <h4 class="promo__list-description">Restoration of the interior</h4>
+                        
+                    </li>
+                    <li class="promo__list-item wow fadeInLeft" data-wow-delay="2800ms">
+                        <img src="./images/dist/icon-3.png" alt="" class="promo__list-icon">
+                        <h4 class="promo__list-description">Protective coatings: application of ceramics and protective membrane</h4>
+                        
+                    </li>   
+                    <li class="promo__list-item wow fadeInUp" data-wow-delay="2600ms">
+                        <img src="./images/dist/icon-4.png" alt="" class="promo__list-icon">
+                        <h4 class="promo__list-description">Adhesion of decorative membranes: tinted glass, vinyl membrane for car body</h4>
+                        
+
                     </li>
                 </ul>
             </div>
@@ -124,12 +142,12 @@
 </section>
 <section class="about block" id="about">
     <div class="container">
-        <h2 class="about__title">About us</h2>
-        <div class="row about__row">
-            <div class="col-md-6">
+        <h2 class="about__title wow fadeInDown">About us</h2>
+        <div class="about__row">
+            <div class="about__image">
                 <img src="./images/dist/about-img.jpg" alt="" class="about__img">
             </div>
-            <div class="col-md-6">
+            <div class="about__text">
                 <p>
                     We are a young and energetic company specializing in car detailing. If you are looking for quality service and impeccable external condition of your car, you have come to the right place.
 
@@ -145,67 +163,104 @@
 </section>
 <section class="services block block-bg" id="services">
     <div class="container">
-        <h2 class="services__title gold-title">
+        <h2 class="services__title gold-title wow fadeInLeft">
             Our services
         </h2>
         <div class="services__row row">
-            <div class="services__col col-lg-3 col-md-6">
+            <div class="services__col col-lg-6 col-md-6 wow fadeInDown" data-delay="0ms">
                 <div class="service">
                     <img src="./images/dist/service-1.jpg" alt="" class="service__img">
                     <div class="service__inner">
                         <h4 class="service__title">
-                            Car wash and polish
+                            Car wash and polish:
                         </h4>
+                        
                         <p class="service__text">
                             We use special formulas and materials to make your car shine like new. We thoroughly clean and polish the bodywork, glass, chrome parts and wheels.
                         </p>
+                        <ul class="service__list">
+                            <li>Wash</li>
+                            <li>Polish</li>
+                        </ul>
+                        
                     </div>
+                    <a href="" class="btn btn--dark">Call</a>
 
                 </div>
             </div>
-            <div class="services__col col-lg-3 col-md-6">
+            <div class="services__col col-lg-6 col-md-6 wow fadeInRight" data-delay="200ms">
                 <div class="service">
                     <img src="./images/dist/service-2.jpg" alt="" class="service__img">
                     <div class="service__inner">
                         <h4 class="service__title">
-                            Restoration of the interior
+                            Restoration of the interior:
                         </h4>
+             
                         <p class="service__text">
-                            We remove dust, dirt and stains, refresh fabric and leather surfaces, including seats, floor mats and ceiling. Your car will look and smell like it just left the factory.                        </p>
+                            We remove dust, dirt and stains, refresh fabric and leather surfaces, including seats, floor mats and ceiling. Your car will look and smell like it just left the factory.                        
+                        </p>
+                        <ul class="service__list">
+                            <li>Сleaning</li>
+                            <li>Restoration</li>
+                        </ul>
+                        
                     </div>
+                    <a href="" class="btn btn--dark">Call</a>   
 
                 </div>
             </div>
-            <div class="services__col col-lg-3 col-md-6">
+            <div class="services__col col-lg-6 col-md-6 wow fadeInUp" data-delay="400ms">
                 <div class="service">
                     <img src="./images/dist/service-3.jpg" alt="" class="service__img">
                     <div class="service__inner">
                         <h4 class="service__title">
                             Protective coatings:
                         </h4>
+                   
                         <p class="service__text">
-                            We offer high quality protective coatings to keep your vehicle protected from environmental aggressors including dirt, UV radiation and scratches.                        </p>
-
+                            We offer high quality protective coatings to keep your vehicle protected from environmental aggressors including dirt, UV radiation and scratches.                        
+                        </p>
+                        <ul class="service__list">
+                            <li>Application of ceramics</li>
+                            <li>Protective membrane gluing</li>
+                        </ul>
+                        
                     </div>
+                    <a href="" class="btn btn--dark">Call</a>   
 
                 </div>
             </div>
-            <div class="services__col col-lg-3 col-md-6">
+            <div class="services__col col-lg-6 col-md-6 wow fadeInLeft" data-delay="600ms">
                 <div class="service">
                     <img src="./images/dist/service-4.jpg" alt="" class="service__img">
                     <div class="service__inner">
                         <h4 class="service__title">
                             Decorative coatings:
                         </h4>
+                  
                         <p class="service__text">
                             To make your car unique, we apply vinyl membranes to any parts of the body and interior of your car.
                         </p>
+                        <ul class="service__list">
+                            <li>Adhesive decorative membrane</li>
+                            <li>Sticking tinting</li>
+                        </ul>
+                        
                     </div>
+                    <a href="" class="btn btn--dark">Call</a>  
 
                 </div>
             </div>
+        </div> 
+        <div class="services__note note wow fadeInUp" data-delay="800ms">
+            <p>
+                At AlexDetailing, we pride ourselves on our professionalism, excellent customer service and commitment to excellence. Trust us with your car and we will do our best to exceed your expectations.
+            </p>
+            <p>
+                Sign up for our service now and we will be happy to meet you at our AlexDetailing garage. Your details deserve the best!
+            </p>
         </div>
-        <div class="row text-center justify-content-center">
+        <!-- <div class="row text-center justify-content-center">
             <div class="col-xl-10">
                 <p>
                     At AlexDetailing, we pride ourselves on our professionalism, excellent customer service and commitment to excellence. Trust us with your car and we will do our best to exceed your expectations.
@@ -215,7 +270,7 @@
                 </p>
                 <a href="tel:1111111" class="btn btn--primary services__btn">Call Now</a>
             </div>
-        </div>
+        </div> -->
 
 
         
@@ -223,7 +278,7 @@
 </section>
 <section class="works block" id="works">
     <div class="container">
-        <h2 class="works__title">Our works</h2>
+        <h2 class="works__title wow fadeInLeft">Our works</h2>
         <p class="works__description">
             
 In our gallery you will find proof of our masterful work. We are proud of every car that has passed through our hands, and we want to share with you the results of our achievements.
@@ -265,17 +320,17 @@ In our gallery you will find proof of our masterful work. We are proud of every 
             <div class="works-pagination"></div>
             </div>
         </div>
-        <div class="works__footer">
+        <div class="works__footer note wow fadeInUp" data-delay="200ms">
             <p>
-                We are ready to bring your car to perfect condition. Sign up for our service now and let us transform your car like you've never seen it before.
+                We are ready to bring your car to perfect condition. <br>Sign up for our service now and let us transform your car like you've never seen it before.
             </p>
-            <a href="tel:111" class="btn btn--primary">Call Now</a>
+            <a href="tel:111" class="btn btn--dark">Call Now</a>
         </div>
     </div>
 </section>
 <section class="contacts block block-bg" id="contacts">
     <div class="container">
-        <h2 class="contacts__title gold-title">Contacts</h2>
+        <h2 class="contacts__title gold-title wow fadeInLeft">Contacts</h2>
         <div class="contacts__row row">
             <div class="col-lg-6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2688.5147777761076!2d-122.53422992450504!3d47.63556258597834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDfCsDM4JzA4LjAiTiAxMjLCsDMxJzU0LjAiVw!5e0!3m2!1sen!2sua!4v1688829604394!5m2!1sen!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contacts__map"></iframe>
@@ -404,6 +459,7 @@ In our gallery you will find proof of our masterful work. We are proud of every 
 </footer>
 
 	<script src="js/jquery.js"></script>
+	<script src="js/wow.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/app.min.js"></script>
 

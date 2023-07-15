@@ -5,7 +5,7 @@
 
     padding-bottom: 2rem !important;
 
-    background: #0A142F;
+    background: #000000;
     color: #fff;
 
     &__logo {
@@ -66,7 +66,10 @@
         &-item {
             color: #fff;
             opacity: 0.8;
-
+            text-decoration: none;
+            svg {
+                vertical-align: middle;
+            }
             &:hover {
                 color: #fff;
                 opacity: 1;
