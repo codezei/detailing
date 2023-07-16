@@ -11,6 +11,11 @@
     &__logo {
         color: #fff;
         margin-bottom: 1.5rem;
+        width: 150px;
+        display: block;
+        img {
+            width: 100%;
+        }
     }
 
     &__subtitle {
